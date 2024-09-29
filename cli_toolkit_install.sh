@@ -10,6 +10,7 @@ fi
 
 # install zsh+oh my zsh+p10k theme
 sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)" -- \
+  -t https://github.com/romkatv/powerlevel10k \
   -a 'POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir newline)' \
   -a 'POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status direnv virtualenv pyenv newline)' \
   -p https://github.com/zsh-users/zsh-autosuggestions \
